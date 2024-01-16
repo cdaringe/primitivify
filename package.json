@@ -53,5 +53,8 @@
     "serialization",
     "stringify",
     "json"
-  ]
+  ],
+  "release": {
+    "branches": ["main"]
+  }
 }
