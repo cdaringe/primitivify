@@ -7,9 +7,3 @@ node_modules
 *.log
 *.lock
 !commitlint.config.js
-*.beam
-*.ez
-build
-erl_crash.dump
-dist
-.parcel-cache
