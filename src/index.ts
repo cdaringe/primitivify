@@ -1,5 +1,4 @@
 import cloneDeepWith from "lodash/cloneDeepWith";
-import { isPlainObject } from "is-plain-object";
 
 const isPrimitive = (value: any) =>
   (typeof value !== "object" && typeof value !== "function") || value === null;
@@ -19,4 +18,30 @@ export function primitivify<T = {}>(obj: any, onVisit?: (v: any) => any): T {
     }
     return null;
   });
+}
+
+const isObject = (o: unknown): o is Record<string, unknown> => {
+  return Object.prototype.toString.call(o) === "[object Object]";
+};
+
+function isPlainObject(o: unknown): o is Record<string, unknown> {
+  var ctor, prot;
+
+  if (isObject(o) === false) return false;
+
+  // If has modified constructor
+  ctor = o.constructor;
+  if (ctor === undefined) return true;
+
+  // If has modified prototype
+  prot = ctor.prototype;
+  if (isObject(prot) === false) return false;
+
+  // If constructor does not have an Object-specific method
+  if (prot.hasOwnProperty("isPrototypeOf") === false) {
+    return false;
+  }
+
+  // Most likely a plain Object
+  return true;
 }
