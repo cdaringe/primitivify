@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",
-    "@types/lodash": "4.17.20"
+    "@types/lodash": "4.17.21"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",
