@@ -11,7 +11,7 @@
     "@types/lodash": "4.17.24"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.0",
+    "@commitlint/cli": "20.5.2",
     "@commitlint/config-conventional": "20.5.0",
     "@types/node": "24.12.2",
     "husky": "^9.0.0",
