@@ -34,11 +34,11 @@ importers:
         specifier: 3.8.4
         version: 3.8.4
       semantic-release:
-        specifier: 25.0.5
-        version: 25.0.5(typescript@5.9.3)
+        specifier: 25.0.7
+        version: 25.0.7(supports-color@7.2.0)(typescript@5.9.3)
       semantic-release-cli:
         specifier: 5.4.6
-        version: 5.4.6
+        version: 5.4.6(supports-color@7.2.0)
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@24.13.2)(typescript@5.9.3)
@@ -2155,8 +2155,8 @@ packages:
     engines: {node: '>=7.6', npm: '>=3'}
     hasBin: true
 
-  semantic-release@25.0.5:
-    resolution: {integrity: sha512-mn61SUJwtM8ThrWn2WmgLVpwVJeG/hPSupua1psdMoufmwRIPyvRLkRkL0JDXkP67OntlLWUYnBnfVc8EDO3/g==}
+  semantic-release@25.0.7:
+    resolution: {integrity: sha512-fFiUD7LNFI0TOGkc49WDHUX4GYKrOMDKct5ReSB1EJCZiPsPdbIPIJGys1xb2ILpK1v9JMsRkjJQgTRpbr7DgQ==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     hasBin: true
 
@@ -2928,23 +2928,23 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.5(typescript@5.9.3))':
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
     dependencies:
       conventional-changelog-angular: 8.2.0
       conventional-changelog-writer: 8.0.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.3.0
-      debug: 4.4.1
-      import-from-esm: 2.0.0
+      debug: 4.4.1(supports-color@7.2.0)
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       lodash-es: 4.17.21
       micromatch: 4.0.8
-      semantic-release: 25.0.5(typescript@5.9.3)
+      semantic-release: 25.0.7(supports-color@7.2.0)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/github@12.0.0(semantic-release@25.0.5(typescript@5.9.3))':
+  '@semantic-release/github@12.0.0(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
     dependencies:
       '@octokit/core': 7.0.5
       '@octokit/plugin-paginate-rest': 13.2.0(@octokit/core@7.0.5)
@@ -2952,21 +2952,21 @@ snapshots:
       '@octokit/plugin-throttling': 11.0.2(@octokit/core@7.0.5)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@7.2.0)
       dir-glob: 3.0.1
-      http-proxy-agent: 7.0.0
-      https-proxy-agent: 7.0.2
+      http-proxy-agent: 7.0.0(supports-color@7.2.0)
+      https-proxy-agent: 7.0.2(supports-color@7.2.0)
       issue-parser: 7.0.0
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 25.0.5(typescript@5.9.3)
+      semantic-release: 25.0.7(supports-color@7.2.0)(typescript@5.9.3)
       tinyglobby: 0.2.15
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@13.1.1(semantic-release@25.0.5(typescript@5.9.3))':
+  '@semantic-release/npm@13.1.1(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))':
     dependencies:
       '@actions/core': 1.11.1
       '@semantic-release/error': 4.0.0
@@ -2981,23 +2981,23 @@ snapshots:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
-      semantic-release: 25.0.5(typescript@5.9.3)
+      semantic-release: 25.0.7(supports-color@7.2.0)(typescript@5.9.3)
       semver: 7.6.0
       tempy: 3.1.0
 
-  '@semantic-release/release-notes-generator@14.1.0(semantic-release@25.0.5(typescript@5.9.3))':
+  '@semantic-release/release-notes-generator@14.1.0(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
     dependencies:
       conventional-changelog-angular: 8.2.0
       conventional-changelog-writer: 8.0.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.3.0
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@7.2.0)
       get-stream: 7.0.1
-      import-from-esm: 2.0.0
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-package-up: 11.0.0
-      semantic-release: 25.0.5(typescript@5.9.3)
+      semantic-release: 25.0.7(supports-color@7.2.0)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3070,9 +3070,9 @@ snapshots:
     dependencies:
       es6-promisify: 5.0.0
 
-  agent-base@7.1.0:
+  agent-base@7.1.0(supports-color@7.2.0):
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3470,17 +3470,23 @@ snapshots:
     dependencies:
       assert-plus: 1.0.0
 
-  debug@3.1.0:
+  debug@3.1.0(supports-color@7.2.0):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@4.4.1:
+  debug@4.4.1(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
   decompress-response@3.3.0:
     dependencies:
@@ -3846,17 +3852,17 @@ snapshots:
 
   http-cache-semantics@4.1.1: {}
 
-  http-proxy-agent@2.1.0:
+  http-proxy-agent@2.1.0(supports-color@7.2.0):
     dependencies:
       agent-base: 4.3.0
-      debug: 3.1.0
+      debug: 3.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  http-proxy-agent@7.0.0:
+  http-proxy-agent@7.0.0(supports-color@7.2.0):
     dependencies:
-      agent-base: 7.1.0
-      debug: 4.4.1
+      agent-base: 7.1.0(supports-color@7.2.0)
+      debug: 4.4.1(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3866,17 +3872,17 @@ snapshots:
       jsprim: 1.4.2
       sshpk: 1.18.0
 
-  https-proxy-agent@2.2.4:
+  https-proxy-agent@2.2.4(supports-color@7.2.0):
     dependencies:
       agent-base: 4.3.0
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.2:
+  https-proxy-agent@7.0.2(supports-color@7.2.0):
     dependencies:
-      agent-base: 7.1.0
-      debug: 4.4.1
+      agent-base: 7.1.0(supports-color@7.2.0)
+      debug: 4.4.1(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3905,9 +3911,9 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
-  import-from-esm@2.0.0:
+  import-from-esm@2.0.0(supports-color@7.2.0):
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@7.2.0)
       import-meta-resolve: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -4167,13 +4173,13 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  make-fetch-happen@5.0.2:
+  make-fetch-happen@5.0.2(supports-color@7.2.0):
     dependencies:
       agentkeepalive: 3.5.2
       cacache: 12.0.4
       http-cache-semantics: 3.8.1
-      http-proxy-agent: 2.1.0
-      https-proxy-agent: 2.2.4
+      http-proxy-agent: 2.1.0(supports-color@7.2.0)
+      https-proxy-agent: 2.2.4(supports-color@7.2.0)
       lru-cache: 5.1.1
       mississippi: 3.0.0
       node-fetch-npm: 2.0.4
@@ -4315,21 +4321,21 @@ snapshots:
       semver: 5.7.2
       validate-npm-package-name: 3.0.0
 
-  npm-profile@4.0.4:
+  npm-profile@4.0.4(supports-color@7.2.0):
     dependencies:
       aproba: 2.0.0
       figgy-pudding: 3.5.2
-      npm-registry-fetch: 4.0.7
+      npm-registry-fetch: 4.0.7(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  npm-registry-fetch@4.0.7:
+  npm-registry-fetch@4.0.7(supports-color@7.2.0):
     dependencies:
       JSONStream: 1.3.5
       bluebird: 3.7.2
       figgy-pudding: 3.5.2
       lru-cache: 5.1.1
-      make-fetch-happen: 5.0.2
+      make-fetch-happen: 5.0.2(supports-color@7.2.0)
       npm-package-arg: 6.1.1
       safe-buffer: 5.2.1
     transitivePeerDependencies:
@@ -4694,7 +4700,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  semantic-release-cli@5.4.6:
+  semantic-release-cli@5.4.6(supports-color@7.2.0):
     dependencies:
       base32: 0.0.6
       clipboardy: 2.3.0
@@ -4706,7 +4712,7 @@ snapshots:
       lodash: 4.18.1
       nopt: 4.0.3
       npm: 6.14.18
-      npm-profile: 4.0.4
+      npm-profile: 4.0.4(supports-color@7.2.0)
       npmlog: 4.1.2
       p-retry: 4.6.2
       parse-git-config: 3.0.0
@@ -4723,16 +4729,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  semantic-release@25.0.5(typescript@5.9.3):
+  semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.5(typescript@5.9.3))
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.0(semantic-release@25.0.5(typescript@5.9.3))
-      '@semantic-release/npm': 13.1.1(semantic-release@25.0.5(typescript@5.9.3))
-      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.5(typescript@5.9.3))
+      '@semantic-release/github': 12.0.0(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@semantic-release/npm': 13.1.1(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))
+      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.7(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.1(typescript@5.9.3)
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@7.2.0)
       env-ci: 11.2.0
       execa: 9.0.2
       figures: 6.1.0
@@ -4741,7 +4747,7 @@ snapshots:
       git-log-parser: 1.2.0
       hook-std: 4.0.0
       hosted-git-info: 9.0.2
-      import-from-esm: 2.0.0
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       lodash-es: 4.17.21
       marked: 15.0.11
       marked-terminal: 7.3.0(marked@15.0.11)
