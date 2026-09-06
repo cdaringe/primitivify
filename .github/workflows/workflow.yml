@@ -13,7 +13,7 @@ jobs:
           node-version: "24.20.0"
       - uses: pnpm/action-setup@v6
         with:
-          version: 11
+          version: 12
       - name: install
         run: pnpm install
       - name: build
