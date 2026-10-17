@@ -16,7 +16,7 @@
     "@types/node": "24.19.2",
     "husky": "^9.0.0",
     "lint-staged": "^17.0.0",
-    "prettier": "3.9.9",
+    "prettier": "3.9.10",
     "semantic-release": "25.0.9",
     "semantic-release-cli": "5.4.6",
     "ts-node": "10.9.2",
